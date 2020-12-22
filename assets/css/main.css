@@ -1,0 +1,129 @@
+body {
+    /* background-color: #2196f31a; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.book-card {
+    width: 400px;
+    background-color: rgb(38 38 44);
+    text-align: center;
+    /* border-radius: 10%; */
+    margin: auto;
+    color: white;
+}
+
+.books-continar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 15px;
+    align-content: center;
+    justify-items: center;
+    margin: auto;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+img {
+    object-fit: cover;
+    width: 100px;
+}
+
+.modal {
+    background-color: black;
+    color: white;
+    width: 500px;
+    /* border-radius: 20%; */
+    position: fixed;
+    left: 50%;
+    top: 0;
+    max-height: 100vh;
+    /* width: 680px; */
+    /* background-color: rgb(103 99 99 / 90%);  */
+    border-left: 1px solid #616060;
+    flex-direction: column;
+    transform: translate(-50%, 21px);
+    transition: max-height .8s;
+}
+
+input {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.book-img {
+    width: 500px;
+}
+.main-nav{
+    background-color: #292929;
+    box-shadow: inset 0 -6px 0 #1e1e1e;
+    height: 100px;
+}
+
+.main-nav ul >*{
+    margin: 0;
+    padding: 0;
+    right: 50%;
+    list-style-type: none;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main-nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.sale-img{
+    width: 65px;
+    left: 0px;
+    position: fixed;
+}
+.form-countiner{
+    display: flex;
+    flex-direction: column;
+}
+.open-book{
+    width: 800px;
+}
+.user-msg{
+    width: 100vw;
+  background-color: #add8e652;
+    position :absolute;
+    height: 100px;
+
+}
+.success{
+    border: 2px solid green;
+    border-radius: 20%;
+    width: 150px;
+    height: 50px;
+    /* text-align: center; */
+    background-color: grey;
+    align-items: center;
+}
+.error{
+    border: 2px solid red;
+    border-radius: 10%;
+    width: 100px;
+    height: 50px;
+}
+.list-book-from-api li{
+    list-style-type: none;
+}
+.list-book-from-api{
+    display: flex;
+    flex-direction: column;
+}
